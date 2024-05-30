@@ -1,38 +1,131 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: #F6F7F8 0% 0% no-repeat padding-box;
+  padding: 18px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.NavBar{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border-radius: 70px;
+  padding: 12px;
+  margin: 18px;
 }
 
-.App-link {
-  color: #61dafb;
+.NavMenu ul{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul li{
+  padding: 16px;
+  margin: 10px;
+  font-size: 14px;
 }
+
+ul li:hover{
+  background: #01F0D0 0% 0% no-repeat padding-box;
+  border-radius: 41px;
+}
+
+.active{
+  background: #01F0D0 0% 0% no-repeat padding-box;
+  border-radius: 41px;
+}
+
+
+
+.icon{
+  color: #072635;
+  margin-right: 10px;
+  width: 16px;
+  height: 17px;
+}
+
+.Account{
+  display: flex;
+  align-items: center;
+}
+
+.Account img{
+  margin-right: 10px;
+}
+
+.AccountDetails{
+  text-align: right;
+}
+
+h2, p{
+  font-size: 14px;
+}
+
+.EndIcons{
+  justify-content: space-between;
+}
+
+.PatientInfo{
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border-radius: 16px;
+  width: 367px;
+  padding: 18px;
+  margin-left: 18px;
+  margin-top: 50px;
+}
+
+.TopContent{
+  display: flex;
+  justify-content: space-between;
+}
+
+.PatientText h1{
+  font-size: 24px;
+}
+
+.Patient{
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.Patient:hover{
+  background-color: #01F0D0;
+  border-radius: 20px;
+}
+
+.Patient.active {
+  background-color: #01F0D0;
+  border-radius: 20px;
+}
+
+.Patient img{
+  margin-right: 10px;
+}
+
+.PatientDetails{
+  text-align: left;
+  margin-right: auto;
+}
+
+h2, p{
+  font-size: 14px;
+}
+
+
+
+
+
+
