@@ -1,14 +1,15 @@
 import React from 'react'
 import TechCare from '../images/TestLogo.svg'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome } from '@fortawesome/free-solid-svg-icons'
-import { faUser } from '@fortawesome/free-solid-svg-icons'
-import { faCalendar } from '@fortawesome/free-solid-svg-icons'
-import { faMessage } from '@fortawesome/free-solid-svg-icons'
-import { faCreditCard } from '@fortawesome/free-solid-svg-icons'
-import { faGear } from '@fortawesome/free-solid-svg-icons'
-import { faEllipsisV } from '@fortawesome/free-solid-svg-icons'
 import Doctor from '../images/Doctor.png'
+import Home from '../images/home_FILL0_wght300_GRAD0_opsz24.svg'
+import Users from '../images/group_FILL0_wght300_GRAD0_opsz24.svg'
+import Calandar from '../images/calendar_today_FILL0_wght300_GRAD0_opsz24.svg'
+import Chat from '../images/chat_bubble_FILL0_wght300_GRAD0_opsz24.svg'
+import Card from '../images/credit_card_FILL0_wght300_GRAD0_opsz24.svg'
+import Settings from '../images/settings_FILL0_wght300_GRAD0_opsz24.svg'
+import More from '../images/more_vert_FILL0_wght300_GRAD0_opsz24.svg'
+import { NavMenu } from './NavMenu'
+
 
 
 export const Header = () => {
@@ -19,26 +20,24 @@ export const Header = () => {
         </div>
         
         <div className='NavMenu'>
-            <ul>
-                <li><FontAwesomeIcon icon={faHome} className='icon'/>Overview</li>
-                <li className='active'><FontAwesomeIcon icon={faUser} className='icon'/>Patients</li>
-                <li><FontAwesomeIcon icon={faCalendar} className='icon'/>Schedule</li>
-                <li><FontAwesomeIcon icon={faMessage} className='icon'/>Message</li>
-                <li><FontAwesomeIcon icon={faCreditCard} className='icon'/>Transaction</li>
-            </ul>
+            < NavMenu image={Home} navtext='Overview'  />
+            < NavMenu image={Users} navtext='Patients' isActive />
+            < NavMenu image={Calandar} navtext='Schedule' />
+            < NavMenu image={Chat} navtext='Message' />
+            < NavMenu image={Card} navtext='Transactions' />
+
         </div>
 
-        <div className='Account'>
+        <div className='account'>
             <img src={Doctor} alt='img' width='44px' height='44px' />
-            <div className='AcountDetails'>
-                <h2 className='DoctorName'>Dr. Jose Simmons</h2>
-                <p className='Position'>General Practitioner</p>
+            <div className='acountdetails'>
+                <h2>Dr. Jose Simmons</h2>
+                <p>General Practitioner</p>
             </div>
+            <div className='EndIcons'>
+            <img src={Settings} alt='log'/>
+            <img src={More} alt='log'/>
         </div>
-
-        <div className='EndIcons'>
-            <FontAwesomeIcon icon={faGear} className='icon'/>
-            <FontAwesomeIcon icon={faEllipsisV} className='icon'/>
         </div>
     </div>
   )
