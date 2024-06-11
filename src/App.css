@@ -469,13 +469,24 @@ p {
 }
 
 .chart__left {
-  width: inherit;
-  margin-right: 20px;
-  align-items: center;
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.chart__right {
+  max-width: 100%;
+  margin-left: 20px;
 }
 
 .chart__line {
-  max-width: 500px;
+  max-width: 100%;
+  width: 100%;
+  flex: 1;
+}
+
+.chart__line canvas{
+  width: 100% !important;
 }
 
 .chart__session {
