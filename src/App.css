@@ -475,7 +475,7 @@ p {
 }
 
 .chart__right {
-  max-width: 100%;
+  max-width: 500px;
   margin-left: 20px;
 }
 
