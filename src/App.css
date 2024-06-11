@@ -463,10 +463,6 @@ p {
   margin-left: auto;
 }
 
-.chart {
-  max-width: 500px;
-  margin-top: 20px;
-}
 
 .chart__left {
   flex: 1 1;
