@@ -1,41 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.main{
-  margin: 50px;
-  display: flex;
-  justify-content: space-between;
-}
-
-body {
-  background: #F6F7F8 0% 0% no-repeat padding-box;
+.app {
+  background-color: #f6f7f8;
   padding: 18px;
 }
 
-.NavBar{
+.main {
+  display: flex;
+  margin: 20px; /* Optional: Adds space between the flex items */
+}
+
+.main > div {
+  flex: 1;
+  padding: 10px;
+}
+
+.NavBar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
+  background: #ffffff 0% 0% no-repeat padding-box;
   border-radius: 70px;
   padding: 12px 32px;
   margin: 18px;
 }
 
-.NavMenu{
+.NavMenu {
   display: flex;
   justify-content: space-between;
   list-style: none;
   gap: 10px;
 }
 
-.navmenu{
+.navmenu {
   color: #072635;
   cursor: pointer;
   display: flex;
@@ -45,71 +49,69 @@ body {
   transition: 0.3s;
 }
 
-.navmenu:hover{
-  background-color: #01F0D0; 
+.navmenu:hover {
+  background-color: #01f0d0;
 }
 
-.navmenu img{
+.navmenu img {
   margin-right: 9px;
   opacity: 1;
 }
 
-.navmenu h3{
+.navmenu h3 {
   font-size: 14px;
 }
 
-
-.active{
-  background: #01F0D0 0% 0% no-repeat padding-box;
+.active {
+  background: #01f0d0 0% 0% no-repeat padding-box;
   border-radius: 41px;
 }
 
-
-.account{
+.account {
   display: flex;
   gap: 10px;
   align-items: center;
 }
 
-.account img{
+.account img {
   margin-right: 10px;
 }
 
-.accountdetails{
+.accountdetails {
   text-align: right;
 }
 
-.account h2{
+.account h2 {
   font-size: 14px;
   color: #072635;
 }
 
-.account p{
+.account p {
   font-size: 14px;
-  color: #707070 ;
+  color: #707070;
 }
 
-.EndIcons{
+.EndIcons {
   justify-content: space-between;
   margin-left: 10px;
   padding: 12px;
   border-left: 3px solid #ededed;
 }
 
-.PatientInfo{
-  background: #FFFFFF 0% 0% no-repeat padding-box;
+.PatientInfo {
+  background: #ffffff 0% 0% no-repeat padding-box;
   border-radius: 16px;
-  margin-left: 18px;
   flex: 1;
   max-width: 367px;
 }
 
-.patientprofile{
+.patientprofile {
   flex: 1;
+  max-width: 367px;
 }
 
-.top__patientprofile{
-  background: #FFFFFF 0% 0% no-repeat padding-box;
+.top__patientprofile {
+  background: #ffffff 0% 0% no-repeat padding-box;
   border-radius: 16px;
   padding: 32px 20px;
   margin-left: 18px;
@@ -117,13 +119,13 @@ body {
   text-align: center;
 }
 
-.top__patientprofile h2{
+.top__patientprofile h2 {
   font-size: 24px;
   margin-top: 24px;
 }
 
-.bottom__patientprofile{
-  background: #FFFFFF 0% 0% no-repeat padding-box;
+.bottom__patientprofile {
+  background: #ffffff 0% 0% no-repeat padding-box;
   border-radius: 16px;
   padding: 18px;
   margin-top: 18px;
@@ -132,192 +134,147 @@ body {
   text-align: left;
 }
 
-.lab__result h2{
+.lab__result h2 {
   margin-left: 2px;
   margin-bottom: 27px;
 }
 
-.details{
+.details {
   display: flex;
   margin-top: 10px;
   padding: 10px;
   align-items: center;
 }
 
-
-.details img{
+.details img {
   margin-right: 10px;
 }
 
-.details__list{
+.details__list {
   margin-top: 20px;
 }
 
-.preview__details{
+.preview__details {
   text-align: left;
   margin-left: 16px;
 }
 
-.preview__details h4{
+.preview__details h4 {
   font-size: 14px;
   font-weight: 400;
   color: #072635;
 }
 
-.preview__details p{
+.preview__details p {
   font-size: 14px;
   color: #072635;
   font-weight: bold;
   margin-top: 4px;
 }
 
-
-.patientprofile button{
+.patientprofile button {
   font-size: 14px;
   color: #072635;
   font-weight: bold;
   margin-top: 50px;
-  background: #01F0D0 0% 0% no-repeat padding-box;
+  background: #01f0d0 0% 0% no-repeat padding-box;
   padding: 11px 44px;
   border: none;
   border-radius: 20px;
   transition: 0.3s;
 }
 
-.patientprofile button:hover{
+.patientprofile button:hover {
   background-color: #04a791;
   opacity: 1;
 }
 
-.PatientCardSection{
-    display: flex;
-    gap: 5px;
-    flex-direction: column;
-    height: 700px;
-    overflow-y: scroll;
-    border-radius: 8px;
+.PatientCardSection {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  height: 700px;
+  overflow-y: scroll;
+  border-radius: 8px;
 }
 
-.PatientCardSection::-webkit-scrollbar{
+.PatientCardSection::-webkit-scrollbar {
   width: 6px;
 }
 
-.PatientCardSection::-webkit-scrollbar-track { 
-  background: #f1f1f1; 
-} 
+.PatientCardSection::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
 
-.PatientCardSection::-webkit-scrollbar-thumb { 
-  background: #072635; 
+.PatientCardSection::-webkit-scrollbar-thumb {
+  background: #072635;
   border-radius: 3px;
-} 
+}
 
-.PatientCardSection::-webkit-scrollbar-thumb:hover { 
-  background: #E3E4E6; 
+.PatientCardSection::-webkit-scrollbar-thumb:hover {
+  background: #e3e4e6;
   border-radius: 3px;
-} 
+}
 
-.PatientCardSection::-webkit-scrollbar-button { 
-  display: none; 
-} 
+.PatientCardSection::-webkit-scrollbar-button {
+  display: none;
+}
 
-.diagnosishistory{
+.diagnosishistory {
   border-radius: 16px;
   margin-left: 18px;
   flex: 2;
 }
 
-.top__diagnosis{
-  background: #FFFFFF 0% 0% no-repeat padding-box;
+.top__diagnosis {
+  background: #ffffff 0% 0% no-repeat padding-box;
   border-radius: 16px;
   padding: 18px;
 }
 
-.bottom__diagnosis{
-  background: #FFFFFF 0% 0% no-repeat padding-box;
+.bottom__diagnosis {
+  background: #ffffff 0% 0% no-repeat padding-box;
   border-radius: 16px;
   padding: 18px;
   margin-top: 18px;
 }
 
-.diagnosis h2{
+.diagnosis h2 {
   font-size: 24px;
   color: #072635;
   margin-bottom: 40px;
 }
 
-
-.diagnosis__card{
+.diagnosis__card {
   display: flex;
   justify-content: space-between;
   padding-top: 21px;
   padding-bottom: 16px;
 }
 
-.diagnosis__card h2{
+.diagnosis__card h2 {
   font-size: 14px;
   font-weight: 300;
   color: #072635;
   text-align: left;
 }
 
-.diagnosis__header th {
-  padding: 16px 14px;
-  background-color: #f2f2f2; 
-  border-radius: 8px;
-}
-
-.diagnosis__header {
-  background-color: #f2f2f2; 
-  padding: 16px 14px;
-  border-radius: 8px; 
-}
-
-
-table {
-  width: 700px;
-  height: 200px;
-  border-collapse: collapse;
-  text-align: left;
-}
-
-
-thead tr{
-  padding: 16px 14px;
-}
-
-tbody{
-  margin-top: 20px;
-}
-
-tr{
-  padding: 16px;
-}
-
-
-
-
-td {
-  text-align: left;
-}
-
-
-
-.TopContent{
+.TopContent {
   margin-bottom: 40px;
   padding: 20px;
   display: flex;
   justify-content: space-between;
 }
 
-.TopContent h2{
+.TopContent h2 {
   font-size: 24px;
 }
 
-.PatientText h1{
+.PatientText h1 {
   font-size: 24px;
 }
 
-.Patient{
+.Patient {
   display: flex;
   flex: 1;
   align-items: center;
@@ -325,39 +282,40 @@ td {
   padding: 16px 20px;
   border-radius: 0%;
   transition: 0.3s;
+  cursor: pointer;
 }
 
-.Patient:hover{
-  background-color: #D8FCF7;
+.Patient:hover {
+  background-color: #d8fcf7;
   opacity: 1;
 }
 
 .Patient.active {
-  background-color: #D8FCF7;
+  background-color: #d8fcf7;
 }
 
-.Patient img{
+.Patient img {
   margin-right: 10px;
 }
 
-.PatientDetails{
+.PatientDetails {
   text-align: left;
   padding-left: 12px;
   margin-right: auto;
 }
 
-.PatientDetails h2{
+.PatientDetails h2 {
   font-size: 14px;
   color: #072635;
 }
 
-.PatientDetails p{
+.PatientDetails p {
   margin-top: 4px;
   font-size: 14px;
   color: #707070;
 }
 
-.lab__resultcard{
+.lab__resultcard {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -366,119 +324,122 @@ td {
   cursor: pointer;
 }
 
-.lab__resultcard:hover{
-  background-color: #F6F7F8;
+.lab__resultcard:hover {
+  background-color: #f6f7f8;
 }
 
 .activeresult {
-  background-color: #F6F7F8;
+  background-color: #f6f7f8;
 }
 
-.lab__resultcard h2{
+.lab__resultcard h2 {
   font-size: 13px;
   font-weight: 500;
   color: #072635;
 }
 
-.lab__resultlist{
+.lab__resultlist {
   display: flex;
   gap: 5px;
   flex-direction: column;
-  height: 200px; 
+  height: 200px;
   overflow-y: auto;
   border-radius: 8px;
 }
 
-.lab__resultlist::-webkit-scrollbar{
+.lab__resultlist::-webkit-scrollbar {
   width: 6px;
 }
 
-.lab__resultlist::-webkit-scrollbar-track { 
-  background: #f1f1f1; 
-} 
+.lab__resultlist::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
 
-.lab__resultlist::-webkit-scrollbar-thumb { 
-  background: #072635; 
+.lab__resultlist::-webkit-scrollbar-thumb {
+  background: #072635;
   border-radius: 3px;
-} 
+}
 
-.lab__resultlist::-webkit-scrollbar-thumb:hover { 
-  background: #E3E4E6; 
+.lab__resultlist::-webkit-scrollbar-thumb:hover {
+  background: #e3e4e6;
   border-radius: 3px;
-} 
+}
 
-.lab__resultlist::-webkit-scrollbar-button { 
-  display: none; 
-} 
+.lab__resultlist::-webkit-scrollbar-button {
+  display: none;
+}
 
-
-.diagnosis__list{
+.diagnosis__list {
   gap: 5px;
   flex-direction: row;
-  height: 200px; 
+  height: 100px;
   overflow-y: auto;
   border-radius: 8px;
 }
 
-.diagnosis__list::-webkit-scrollbar{
+.diagnosis__list::-webkit-scrollbar {
   width: 6px;
 }
 
-.diagnosis__list::-webkit-scrollbar-track { 
-  background: #f1f1f1; 
-} 
-
-.diagnosis__list::-webkit-scrollbar-thumb { 
-  background: #072635; 
-  border-radius: 3px;
-} 
-
-.diagnosis__list::-webkit-scrollbar-thumb:hover { 
-  background: #E3E4E6; 
-  border-radius: 3px;
-} 
-
-.diagnosis__list::-webkit-scrollbar-button { 
-  display: none; 
-} 
-
-.top__diagnosiscard{
-  display: flex;
-  gap: 21px;
+.diagnosis__list::-webkit-scrollbar-track {
+  background: #f1f1f1;
 }
 
-.diagnosistcard{
-  background-color: #E0F3FA;
+.diagnosis__list::-webkit-scrollbar-thumb {
+  background: #072635;
+  border-radius: 3px;
+}
+
+.diagnosis__list::-webkit-scrollbar-thumb:hover {
+  background: #e3e4e6;
+  border-radius: 3px;
+}
+
+.diagnosis__list::-webkit-scrollbar-button {
+  display: none;
+}
+
+.top__diagnosiscard {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.diagnosistcard {
+  background-color: #e0f3fa;
   padding: 16px;
   border-radius: 12px;
   text-align: left;
-  width: 250px;
+  max-width: 250px;
+  flex: 1 1 30%;
 }
 
-.color2{
-  background-color: #FEE6E9;
+.color2 {
+  background-color: #fee6e9;
 }
 
-.diagnosistcard img{
+.diagnosistcard img {
   margin-bottom: 16px;
 }
 
-.parameters{
+.parameters {
   margin-bottom: 17px;
 }
 
-.parameters p{
+.parameters p {
   font-size: 16px;
   font-weight: 600;
   color: #072635;
-} 
+}
 
-.parameters h2{
+.parameters h2 {
   font-size: 30px;
   color: #072635;
 }
 
-p{
+p {
   font-size: 14px;
   color: #072635;
 }
@@ -488,16 +449,37 @@ p{
   padding: 16px;
   border-radius: 12px;
   text-align: left;
-  width: 250px;
+  max-width: 250px;
+  flex: 1 1 30%;
 }
 
-
-.patientchart__title{
+.patientchart__title {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-.chart__session{
+.patientchart__title p {
+  margin-left: auto;
+}
+
+.chart {
+  max-width: 500px;
+  margin-top: 20px;
+}
+
+.chart__left {
+  width: inherit;
+  margin-right: 20px;
+  align-items: center;
+}
+
+.chart__line {
+  max-width: 500px;
+}
+
+.chart__session {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   background-color: #f4f0fe;
@@ -506,49 +488,96 @@ p{
   margin-bottom: 20px;
 }
 
-.chart__left{
-
-}
-
-.chartcard{
+.chartcard {
   padding-bottom: 16px;
-  border-bottom: 1px solid #CBC8D4;
+  border-bottom: 1px solid #cbc8d4;
   margin-bottom: 16px;
   width: 201px;
 }
 
-.cardtitle{
+.cardtitle {
   display: flex;
 }
 
-.cardtitle h2{
+.cardtitle h2 {
   margin-left: 4px;
   font-size: 14px;
   color: #072635;
 }
-.chartvalue{
+.chartvalue {
   font-size: 22px;
   color: #072635;
   margin-top: 8px;
   margin-bottom: 8px;
 }
 
-.chartlevel{
+.chartlevel {
   font-size: 14px;
   color: #072635;
 }
 
-
-
-.charttag{
-  background-color: #E66FD2;
+.charttag {
+  background-color: #e66fd2;
   width: 14px;
   height: 14px;
   border-radius: 50%;
 }
 
+.chart {
+  background-color: #8c6fe6;
+}
 
-.chart
-tagcustom {
-  background-color: #8C6FE6;
+table.scrolldown {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+thead tr th {
+  text-align: left;
+  padding: 15px;
+  background-color: #f6f7f8;
+}
+
+tbody tr td {
+  text-align: left;
+  padding: 15px;
+}
+
+table.scrolldown tbody {
+  height: 50px;
+}
+
+td {
+  text-align: left;
+}
+
+.table__list {
+  gap: 5px;
+  flex-direction: row;
+  height: 250px;
+  overflow-y: auto;
+  border-radius: 8px;
+}
+
+.table__list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.table__list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.table__list::-webkit-scrollbar-thumb {
+  background: #072635;
+  border-radius: 3px;
+}
+
+.table__list::-webkit-scrollbar-thumb:hover {
+  background: #e3e4e6;
+  border-radius: 3px;
+}
+
+.table__list::-webkit-scrollbar-button {
+  display: none;
 }

@@ -1,19 +1,18 @@
-import React from 'react';
-import './App.css';
-import { Header } from './components/Header';
-import { PatientInfo } from './components/PatientInfo';
-import { DiagnosisHistory } from './components/DiagnosisHistory';
-import { PatientProfile } from './components/PatientProfile';
+import React from "react";
+import "./App.css";
+import { Header } from "./components/Header";
+import { PatientList } from "./components/PatientList";
+import { PatientHealtStatus } from "./components/PatientHealtStatus";
+import { PatientDetails } from "./components/PatientDetails";
 
 const App = () => {
-
   return (
-    <div className="App">
+    <div className="app">
       <Header />
-      <div className='main'>
-      <PatientInfo />
-      < DiagnosisHistory />
-      < PatientProfile />
+      <div className="main">
+        <PatientList />
+        <PatientHealtStatus />
+        <PatientDetails />
       </div>
     </div>
   );
